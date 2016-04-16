@@ -1,0 +1,5 @@
+plot(dataTest$DateTime, dataTest$Sub_metering_1, ylab="Energy sub metering", xlab="", type="n")
+lines(dataTest$DateTime, dataTest$Sub_metering_1)
+lines(dataTest$DateTime, dataTest$Sub_metering_2, col="red")
+lines(dataTest$DateTime, dataTest$Sub_metering_3, col="blue")
+legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), fill = c("black", "red", "blue"))
